@@ -1,0 +1,73 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<body>
+     <div class="w3-container">
+        <img src="css/Arena Breakout.jpg" alt="" height="200px" width="1505px" class="w3-animate-top" />
+     </div>
+
+	<div class="w3-bar w3-grey">
+        <button class="w3-bar-item w3-button" onclick="openBar('Home')">Home</button>
+        <button class="w3-bar-item w3-button" onclick="openBar('Profile')">Profile</button>
+        <button class="w3-bar-item w3-button" onclick="openBar('Penjelasan')">Penjelasan Arena Breakout</button>
+        <button class="w3-bar-item w3-button" onclick="openBar('gambar')">Gambaran Gameplaynya</button>
+		<button class="w3-bar-item w3-button" onclick="openBar('kesimpulan01')">Kesimpulan Dari Pribadi Saya</button>
+
+    </div>
+
+	<div id="Profile" class="w3-container kota w3-animate-zoom" style="display: none;">
+		<center>
+			<p>
+			<img src="css/TIAS.jpg" width="300" height="300">
+			<h3> NAMA : TIAS NURROHMAN HIDAYAT</h3>
+			<h3> NIM : 10123053</h3>
+			<h3> KELAS : IF-2</h3>
+			</p>
+	</div>
+
+	<div id="Penjelasan" class="w3-container kota" style="display: none;">
+		<center>
+			<th><h1>Apa Itu Arena Breakout
+			<hr>
+			<h4>Secara keseluruhan, Arena Breakout merupakan game bergenre extraction shooter atau survival, di mana player harus mengatur strategi, mengumpulkan perkakas dari musuh, merakit senjata, serta mencari jalan keluar sebagai pejuang bertahan terakhir. Elemen-elemen gameplay tersebut lah yang menciptakan tipe permainan realistis yang disenangi gamer.</h4>
+	</div>
+
+	<div id="Home" class="w3-container kota w3-animate-fading" style="display:none">
+		<img src="css/Arena Breakout2.png" alt="" width="1500px" class="w3-animate-zoom"/>
+	 </div>
+
+	 
+	<div id="kesimpulan01" class="w3-container kota" style="display: none;">
+		<h3>
+			Kesimpulan saya pada saat bermain game arena breakout yaitu yang pertama harus mempunyai mental yang kuat karena game ini game yang sangat susah dimainkan oleh banyak orang, yang kedua yaitu jangan serakah apapila serakah bisa kena ambisnya oleh teman dan musuh, dan yang terakhir yaitu game ini tidak boleh bermain secara agresif karena bisa langsung mati,karena jika mati barang-barang kita tidak bisa balik lagi.
+		</h3>
+
+	</div>
+
+	 <div id="gambar" class="w3-container kota w3-animate-zoom" style="display:none">
+		<center>
+			<h1 class="w3-panel w3-orange">Contoh Gambar Gameplay nya</h1>
+			<hr>
+			<p>
+				<img src="css/0-1.jpg" width="600" height="400">
+				<hr>
+				<img src="css/0-2.jpg" width="600" height="400">
+				<hr>
+				<img src="css/0-3.jpg" width="600" height="400">
+			</p>
+			
+		
+	 </div>
+
+	 <script>
+		function openBar(Home) {
+		   var i;
+		   var x = document.getElementsByClassName("kota");
+		   for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";
+		   }
+		document.getElementById(Home).style.display = "block";
+		  }
+   </script>
+</body>
+</html> 
